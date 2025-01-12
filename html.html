@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cycle Recycle</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Font for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Cycle Recycle</h1>
+        <div class="logo">
+            <h1>Cycle Recycle</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -19,25 +23,41 @@
         </nav>
     </header>
 
-    <section id="about">
+    <section class="hero">
+        <h2>Make Recycling Rewarding</h2>
+        <p>Help the environment by recycling, earn points, and enjoy amazing rewards!</p>
+        <a href="#how-it-works" class="cta-button">Learn More</a>
+    </section>
+
+    <section id="about" class="section">
         <h2>About Us</h2>
-        <p>At Cycle Recycle, we make recycling easy and rewarding! Bring in your recyclable materials like plastic bottles, bags, and cans, and earn rewards for helping reduce waste. Together, we can make a real impact on the environment!</p>
+        <p>Cycle Recycle is a platform where you can recycle everyday items like plastic bottles, bags, cans, and more, while earning rewards for your efforts. Let's work together to create a cleaner, greener planet.</p>
     </section>
 
-    <section id="how-it-works">
+    <section id="how-it-works" class="section">
         <h2>How It Works</h2>
-        <p>Recycling is simple and rewarding:</p>
-        <ol>
-            <li>Collect your recyclables like plastic bottles, bags, and cans.</li>
-            <li>Visit a Cycle Recycle center near you to drop them off.</li>
-            <li>Earn points based on the quantity and type of recyclables.</li>
-            <li>Redeem your points for rewards like discounts, gift cards, or donations to environmental causes!</li>
-        </ol>
+        <div class="steps">
+            <div class="step">
+                <img src="icons/collect.png" alt="Collect recyclables" class="icon">
+                <p>Collect recyclables like bottles, bags, and cans.</p>
+            </div>
+            <div class="step">
+                <img src="icons/dropoff.png" alt="Drop-off recyclables" class="icon">
+                <p>Drop off your recyclables at a Cycle Recycle location.</p>
+            </div>
+            <div class="step">
+                <img src="icons/earn.png" alt="Earn points" class="icon">
+                <p>Earn points based on the items you recycle.</p>
+            </div>
+            <div class="step">
+                <img src="icons/redeem.png" alt="Redeem rewards" class="icon">
+                <p>Redeem points for rewards like gift cards, eco-products, and donations!</p>
+            </div>
+        </div>
     </section>
 
-    <section id="rewards">
+    <section id="rewards" class="section">
         <h2>Rewards</h2>
-        <p>For every item you recycle, you'll earn points that can be redeemed for great rewards! Here's a sample of what you can earn:</p>
         <ul>
             <li><strong>Plastic Bottles</strong>: 10 points</li>
             <li><strong>Plastic Bags</strong>: 5 points</li>
@@ -45,12 +65,11 @@
             <li><strong>Cardboard</strong>: 15 points</li>
             <li><strong>Paper</strong>: 7 points</li>
         </ul>
-        <p>Redeem your points for gift cards, eco-friendly products, and even donate them to help support environmental charities!</p>
+        <p>Redeem your points for exciting rewards or donate them to support environmental causes!</p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact Us</h2>
-        <p>If you have any questions or want to get involved, reach out to us:</p>
         <form>
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
@@ -68,5 +87,6 @@
     <footer>
         <p>&copy; 2025 Cycle Recycle. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
